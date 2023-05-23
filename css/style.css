@@ -32,15 +32,6 @@
   box-sizing: border-box;
 }
 
-
-/* Make elements easier to work with */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
 /* Remove animations for people who have turned them off */
 
 @media (prefers-reduced-motion: reduce) {
@@ -52,6 +43,18 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body  */
+body {
+  /* min-height: 100vh; */
+  font-family: var(--body-font);
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
 }
 
 /* Making images easier to work with */
@@ -68,4 +71,43 @@ ul {
 /* Making anchor tags/links easier to work with */
 a {
   text-decoration: none;
+}
+
+/* Make elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Utility classes */
+/* Controlling widths with container */
+.container {
+  max-width: 68.75rem;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  overflow: auto;
+}
+
+/* flexbox utility class */
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+
+/* grid utility class */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* full height grow */
+.full-height-grow {
+  flex-grow: 1;
+}
+
+/* Styling the logo */
+.logo {
+  width: 12.5rem;
 }
