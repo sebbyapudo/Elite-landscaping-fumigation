@@ -109,5 +109,6 @@ select {
 
 /* Styling the logo */
 .logo {
-  width: 12.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
