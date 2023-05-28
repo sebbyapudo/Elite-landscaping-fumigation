@@ -178,6 +178,7 @@ select {
   justify-content: space-around;
   border-top: 1px solid var(--dark-clr);
   padding-top: 3rem;
+  width: 100%;
 }
 
 .social-icons a {
@@ -186,5 +187,5 @@ select {
 }
 
 .show-links {
-  height: 228px;
+  height: 324px;
 }
