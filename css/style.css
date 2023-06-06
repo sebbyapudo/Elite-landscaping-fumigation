@@ -1,0 +1,109 @@
+/*
+=============== 
+Google fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap');
+/*
+=============== 
+Custom properties
+===============
+*/
+:root {
+   /* fonts */
+    --body-font: 'Roboto', sans-serif;
+    --primary-header-font: 'Lato', sans-serif;
+    --secondary-header-font: 'Montserrat', sans-serif;
+
+   /* colors */
+    --off-white: #ffff;
+    --dark-clr: #0000;
+    --earth-clr: #663300;
+    --green-clr: #58a65f;
+    --accent-green: #67a153;
+    --light-dark: #aaaaaa;
+
+    /* essesntials */
+    --borderRadius: 0.25rem;
+    --letterSpacing: 1px;
+    --transition: 0.3s ease-in-out all;
+}
+
+/*
+=============== 
+Base resets
+===============
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* buttons */
+
+.btn {
+  cursor: pointer;
+  /* color: var(--white); */
+  /* background: var(--primary-500); */
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transtion);
+  /* text-transform: capitalize; */
+  display: inline-block;
+}
+
+/* Make elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove animations for people who have turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--dark-clr);
+}
+/*
+=============== 
+
+===============
+*/
