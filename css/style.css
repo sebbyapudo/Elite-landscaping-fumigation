@@ -160,7 +160,7 @@ nav header
   display: flex;
   flex-direction: column;
   /* to do */
-  /* height: 0; */
+  height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
