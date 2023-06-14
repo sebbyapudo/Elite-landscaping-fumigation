@@ -279,7 +279,7 @@ hero section
 */
 #hero {
   min-height: calc(100vh - (4.375rem + 17.375rem));
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 }
 
 #hero .container {
@@ -345,13 +345,13 @@ article .stat {
 }
 
 @media screen and (min-width: 992px) {
-.hero-text {
-  padding: 0;
-}
+  .hero-text {
+    padding: 4rem 0;
+    color: var(--dark-clr);
+  }
 
   #hero .container {
     background: none;
-    color: var(--dark-clr);
   }
   section .container {
     display: grid;
