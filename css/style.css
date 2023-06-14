@@ -110,6 +110,16 @@ body {
   color: var(--dark-clr);
 }
 
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
 .logo {
   width: 100px;
   margin: 10px 0;
@@ -120,7 +130,7 @@ nav header
 ===============
 */
 .navbar {
-  height: 70px;
+  height: 4.375rem;
   /* background: lightpink; */
 }
 
@@ -166,7 +176,7 @@ nav header
 }
 
 .show-links {
-  height: 278px;
+  height: 18.375rem;
 }
 
 .nav-link {
@@ -200,7 +210,7 @@ nav header
   }
 
   .navbar {
-    height: 70px;
+    height: 4.375rem;
   }
 
   .navbar .container {
@@ -235,11 +245,114 @@ nav header
   }
 }
 
-
-
-
 /*
 =============== 
-
+Sections & titles
 ===============
 */
+.hero-title {
+  font-family: var(--secondary-header-font);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.hero-title span {
+  font-family: var(--primary-header-font);
+  font-weight: 750;
+  font-size: 35px;
+
+}
+
+#services,
+#about,
+#contact {
+  height: 80vh;
+}
+
+.section {
+  padding-bottom: 5rem;
+}
+/*
+=============== 
+hero section
+===============
+*/
+#hero {
+  min-height: calc(100vh - (4.375rem + 17.375rem));
+  padding-top: 3rem;
+}
+
+article .text,
+article .hero-btn {
+  margin: 1.5rem 0;
+}
+
+article .text {
+  margin-bottom: 0;
+}
+
+article .hero-btn {
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.underline {
+  height: 10vw;
+  background-color: var(--dark-clr);
+  width: 3px;
+}
+
+article .stat {
+  text-transform: uppercase;
+  font-family: var(--body-font);
+}
+
+.stat .stat-icon {
+  display: inline;
+  width: 30px;
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 992px) {
+  section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section .hero-img {
+    /* width: 35vw; */
+    /* height: 100px; */
+    margin-left: auto;
+  }
+
+  section .hero-img img {
+    width: 300px;
+    border-radius: var(--borderRadius);
+  }
+
+  section .hero-btn {
+    display: block;
+    width: 25vw;
+  }
+
+  section .stats {
+    gap: 4rem;
+  }
+
+  section .underline {
+    height: 7vw;
+  }
+}
+
