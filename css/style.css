@@ -183,14 +183,14 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
+  background: var(--off-white);
   box-shadow: var(--light-shadow);
 }
 .fixed-nav .links a {
-  color: var(--clr-grey-1);
+  color: var(--light-dark);
 }
 .fixed-nav .links a:hover {
-  color: var(--clr-secondary);
+  color: var(--green-clr);
 }
 /* .fixed-nav .links-container {
   height: auto !important;
