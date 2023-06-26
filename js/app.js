@@ -34,10 +34,44 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('fixed-nav')
   }
 
+  // top link btn
   if(scrollHeight > 500) {
     topLink.classList.add('show-link');
   }
   else {
     topLink.classList.remove('show-link');
   }
+})
+
+// Smooth scroll behaviour
+const scrollLink = document.querySelectorAll('.scroll-link') 
+
+scrollLink.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // prevent default behaviour
+    e.preventDefault()
+    // navigate to specific target
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    // calculate heights
+    const navHeight = navbar.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    const fixedNav = navbar.classList.contains('fixed-nav');
+    let position = element.offsetTop - navHeight;
+
+    if(!fixedNav){
+      position = position - navHeight;
+    }
+
+    if(navHeight > 82) {
+      position += containerHeight; 
+    }
+
+    window.scrollTo ({
+      left: 0,
+      top: position,
+    })
+    linksContainer.style.height = 0;
+    console.log(position);
+  })
 })
