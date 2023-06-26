@@ -174,7 +174,7 @@ Scroll
 */
 /* navbar */
 nav {
-  background: var(--clr-white);
+  background: var(--off-white);
   padding: 1rem 1.5rem;
 }
 /* fixed nav */
@@ -209,7 +209,7 @@ nav {
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--off-white);
+  color: var(--green-clr);
 }
 .logo {
   height: 50px;
@@ -223,8 +223,8 @@ nav {
   height: 200px;
 }
 .links a {
-  background: var(--clr-white);
-  color: var(--clr-grey-5);
+  background: var(--off-white);
+  color: var(--dark-clr);
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -234,7 +234,7 @@ nav {
   padding: 0.75rem 0;
 }
 .links a:hover {
-  color: var(--clr-grey-1);
+  color: var(--green-clr);
 }
 @media screen and (min-width: 800px) {
   nav {
@@ -323,7 +323,7 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%), url(../asse
   height: 80vh;
 }
 #services {
-  background: var(--off-white);
+  background: var(--earth-clr);
 }
 footer {
   background: var(--accent-green);
