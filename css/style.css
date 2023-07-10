@@ -290,7 +290,7 @@ header {
   display: grid;
   /* place-items: center; */
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 3.5rem;
   letter-spacing: var(--letterSpacing);
 }
 .container h1 {
@@ -302,7 +302,6 @@ header {
 
 .container h1 span {
   font-family: var(--secondary-header-font);
-  font-size: 2.5rem;
 }
 .container p {
   color: var(--off-white);
