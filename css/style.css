@@ -330,13 +330,35 @@ header {
   color: var(--accent-green);
 }
 #about,
-#services,
 #products {
   height: 80vh;
 }
 #services {
   background: var(--earth-clr);
 }
+
+#services h2 {
+  font-size: 1.5rem;
+}
+
+.serve {
+  width: 350px;
+}
+
+.services-img {
+  border: 3px solid var(--dark-clr);
+  border-radius: var(--radius);
+}
+
+.services-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+
 footer {
   background: var(--accent-green);
   padding: 5rem 1rem;
