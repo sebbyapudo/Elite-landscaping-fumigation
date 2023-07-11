@@ -358,6 +358,28 @@ header {
   padding: 1rem 0;
 }
 
+/* blog */
+#blog {
+  height: 50vh;
+}
+#blog .blog-card {
+  height: 200px;
+  width: 200px;
+  border: 2px solid var(--dark-clr);
+  border-radius: var(--radius);
+  text-align: center;
+  position: absolute;
+}
+
+#blog .blog-img {
+  position: relative;
+  width: 50px;
+  left: 80px;
+}
+
+#blog .blog-info {
+  color: var(--off-white);
+}
 
 footer {
   background: var(--accent-green);
