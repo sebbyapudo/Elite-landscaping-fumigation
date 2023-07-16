@@ -330,7 +330,6 @@ header {
 .title span {
   color: var(--accent-green);
 }
-#about,
 #products {
   height: 80vh;
 }
@@ -397,6 +396,21 @@ header {
 
 #blog .blog-info {
   color: var(--off-white);
+}
+
+#about {
+  /* padding: 5rem 0; */
+}
+
+#about .about-info {
+  
+}
+#about .info {
+  color: var(--off-white);
+  text-align: start;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
