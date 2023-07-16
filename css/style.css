@@ -330,14 +330,14 @@ header {
 .title span {
   color: var(--accent-green);
 }
-#products {
-  height: 80vh;
-}
+
 #services {
   background: rgba(102, 51, 0, 0.4);
 }
 
-#services h2 {
+#services h2,
+#products h2,
+#about h2 {
   font-size: 1.5rem;
 }
 
@@ -401,16 +401,36 @@ header {
 #about {
   /* padding: 5rem 0; */
 }
-
-#about .about-info {
-  
-}
 #about .info {
   color: var(--off-white);
   text-align: start;
   padding-bottom: 1.5rem;
   display: flex;
   justify-content: center;
+}
+
+#products {
+  background-color: var(--off-white);
+}
+
+#products h2 {
+  color: var(--earth-clr);
+}
+
+#products .product-img {
+  width: 400px;
+}
+
+#products img {
+  border-radius: var(--radius);
+}
+
+#products .product-name {
+  color: var(--light-dark);
+}
+
+#products .price {
+  color: #58a65f;
 }
 
 footer {
