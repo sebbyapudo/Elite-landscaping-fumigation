@@ -413,12 +413,17 @@ header {
   background-color: var(--off-white);
 }
 
-#products h2 {
-  color: var(--earth-clr);
+#products .products-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  justify-content: center;
 }
 
-#products .product-img {
-  width: 400px;
+#products h2 {
+  color: var(--earth-clr);
+  margin-bottom: 3rem;
 }
 
 #products img {
@@ -427,6 +432,8 @@ header {
 
 #products .product-name {
   color: var(--light-dark);
+  padding: 1rem 0;
+  padding-bottom: 0;
 }
 
 #products .price {
