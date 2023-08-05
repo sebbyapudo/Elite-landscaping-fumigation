@@ -345,9 +345,21 @@ header {
   width: 350px;
 }
 
+.service-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--earth-clr);
+}
+
+.service-info {
+  color: var(--off-white);
+}
+
 .services-img {
   border: 3px solid var(--dark-clr);
   border-radius: var(--radius);
+  width: 360px;
+  height: 300px;
 }
 
 .services-container {
@@ -416,7 +428,7 @@ header {
 #products .products-container {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   align-items: center;
   justify-content: center;
 }
