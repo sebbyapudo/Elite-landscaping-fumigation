@@ -95,3 +95,21 @@ function renderProducts(){
 }
 
 renderProducts()
+
+// Render services
+function renderServices() {
+  const servicesEl = document.querySelector('.services-container');
+  services.forEach((service) => {
+    servicesEl.innerHTML += `
+    <!-- service -->
+    <div class="serve">
+      <img src=${service.img} alt=${service.id} class="services-img">
+      <div class="service-title">${service.name}</div>
+      <p class="service-info">${service.description}</p>
+    </div>
+    <!-- end of service -->
+    `
+  })
+}
+
+renderServices()
