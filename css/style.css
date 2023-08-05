@@ -428,6 +428,8 @@ header {
 
 #products img {
   border-radius: var(--radius);
+  width: 300px;
+  height: 250px;
 }
 
 #products .product-name {
