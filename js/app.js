@@ -75,3 +75,19 @@ scrollLink.forEach((link) => {
     console.log(position);
   })
 })
+
+// Render products 
+function renderProducts(){
+  const productEl = document.querySelector('.product');
+  products.forEach(item => {
+    productEl.innerHTML += `
+    <div class="product-img" >
+      <img src=${item.img} alt="${item.id}">
+    </div>
+    <h4 class="product-name">${item.name}</h4>
+    <p class="price">KES ${item.price}/=</p>
+    `
+  })
+}
+
+renderProducts()
