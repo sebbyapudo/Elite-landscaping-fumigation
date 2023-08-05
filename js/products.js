@@ -1,12 +1,12 @@
 const products = [{
   id: '1',
-  img: './assets/fumigation-1.jpg',
+  img: './assets/pemba-green.jpeg',
   name: 'Green Pemba Grass',
   price: '1300/= per sac',
 },
 {
   id: '2',
-  img: './assets/lawn-mower.jpg',
+  img: './assets/pemba-green.jpg',
   name: 'Variegated pemba',
   price: '1300/= per sac',
 },
