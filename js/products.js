@@ -26,19 +26,19 @@ const products = [{
   id: '5',
   img: './assets/bracharia.jpg',
   name: 'Zimbabwe grass seeds',
-  price: '1300/= 0.5kg',
+  price: '5000/= 0.5kg',
 },
 {
   id: '6',
   img: './assets/papsalum.jpeg',
   name: 'Paspalum grass seeds',
-  price: '5000/= 0.5kg',
+  price: '6000/= 0.5kg',
 },
 {
   id: '7',
-  img: './assets/kikuyu.jpg',
+  img: './assets/kikuyu.avif',
   name: 'Kikuyu grass seeds',
-  price: '1300/= 0.5kg',
+  price: '6000/= 0.5kg',
 },
 {
   id: '8',
